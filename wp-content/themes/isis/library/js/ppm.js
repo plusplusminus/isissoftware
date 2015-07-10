@@ -1,0 +1,26 @@
+jQuery(document).ready(function(){
+	jQuery('.background-image-holder').each(function() {
+	    var imgSrc = jQuery(this).children('img').attr('src');
+	    jQuery(this).css('background', 'url("' + imgSrc + '")');
+	    jQuery(this).children('img').hide();
+	    jQuery(this).css('background-position', '50% 50%');
+	});
+
+	setTimeout(function() {
+        jQuery('.background-image-holder').each(function() {
+            jQuery(this).addClass('fadeIn');
+        });
+        jQuery('.header.fadeContent').each(function() {
+            jQuery(this).addClass('fadeIn');
+        });
+    }, 200);
+})
+
+
+// Can also be used with $(document).ready()
+jQuery(window).load(function() {
+  jQuery('.flexslider').flexslider({
+    animation: "fade",
+    directionNav: false
+  });
+});
