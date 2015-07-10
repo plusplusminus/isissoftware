@@ -436,6 +436,86 @@
 	}
 }
 
+/* Industry */
+
+.section_industries--info {
+	position: relative;
+	z-index: 999;
+}
+
+.section_industries--title {
+	font-size: 28px;
+	font-weight: 300;
+}
+
+.section_industries-archive {
+	padding: 35px 0;
+}
+
+.industries_content {
+	color: #fff;
+
+	.industries_content--title {
+		font-size: 48px;
+		margin-bottom: 35px;
+		padding-bottom: 5px;
+		border-bottom: 2px solid @brand-primary;
+	}
+
+
+	p {
+		.lead();
+	}
+}
+
+.industries_list {
+	.list-unstyled();
+
+	border-top: 1px solid @gray-lighter;
+
+	.list_industry {
+		width: 50%;
+		float: left;
+		min-height: 380px;
+		border-left: 1px solid @gray-lighter;
+		border-right: 1px solid @gray-lighter;
+		border-bottom: 1px solid @gray-lighter;
+
+		padding: 35px;
+
+		&:nth-child(2n+1) {
+			border-right: none;
+		}
+
+		&:nth-child(3n) {
+			.clearfix();
+		}
+
+		&:last-child {
+			border-right: 1px solid @gray-lighter;
+		}
+	}
+}
+
+.industry_info--title {
+	font-size: @font-size-large;
+	color: @brand-info;
+}
+
+.industry_info--subtitle { 
+	font-size: 14px;
+}
+
+.industry_info--link {
+	color: @brand-info;
+
+	> span {
+		font-size: 2em;
+		margin-left: 10px;
+		vertical-align: middle;
+	}
+}
+
 /* Widgets */
 
 .standard {

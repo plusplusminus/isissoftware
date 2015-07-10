@@ -35,7 +35,7 @@ class isisCustomPostTypes {
 					'hierarchical' 		=> true,
 					'has_archive' 		=> false,
 					'rewrite' 			=> array(	"slug" => "isis-product"	), // Permalinks
-					'query_var' 		=> "isis product", // This goes to the WP_Query schema
+					'query_var' 		=> "isis-product", // This goes to the WP_Query schema
 					'supports' 			=> array(	'title',																
 													'editor',
 													'thumbnail',
@@ -46,7 +46,43 @@ class isisCustomPostTypes {
 
 													)
 				)
-			);			
+			);		
+
+		register_post_type(	'industry', 
+			array(	'label' 			=> __('Industries'),
+					'labels' 			=> array(	'name' 					=> __('Industries'),
+													'singular_name' 		=> __('Industry'),
+													'add_new' 				=> __('Add New'),
+													'add_new_item' 			=> __('Add New Industry'),
+													'edit' 					=> __('Edit'),
+													'edit_item' 			=> __('Edit Industry'),
+													'new_item' 				=> __('New Industry'),
+													'view_item'				=> __('View Industry'),
+													'search_items' 			=> __('Search Industries'),
+													'not_found' 			=> __('No Industry found'),
+													'not_found_in_trash' 	=> __('No Industry found in trash')	),
+					'public' 			=> true,
+					'can_export'		=> true,
+					'show_ui' 			=> true, // UI in admin panel
+					'_builtin' 			=> false, // It's a custom post type, not built in
+					'_edit_link' 		=> 'post.php?post=%d',
+					'capability_type' 	=> 'post',
+					'menu_icon' 		=> 'dashicons-awards',
+					'hierarchical' 		=> true,
+					'has_archive' 		=> false,
+					'rewrite' 			=> array(	"slug" => "industry"	), // Permalinks
+					'query_var' 		=> "industry", // This goes to the WP_Query schema
+					'supports' 			=> array(	'title',																
+													'editor',
+													'thumbnail',
+													'page-attributes'
+													),
+					'show_in_nav_menus'	=> true ,
+					'taxonomies'		=> array(	
+
+													)
+				)
+			);		
 	}
 
 	
