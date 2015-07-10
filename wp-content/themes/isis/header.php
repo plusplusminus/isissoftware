@@ -30,9 +30,9 @@
 		<link href='http://fonts.googleapis.com/css?family=Roboto+Slab:400,300' rel='stylesheet' type='text/css'>
 		<link rel="pingback" href="<?php bloginfo('pingback_url'); ?>">
 
-		<script src="//use.typekit.net/qub1zxv.js"></script>
+		<script src="//use.typekit.net/qht7rmr.js"></script>
 		<script>try{Typekit.load();}catch(e){}</script>
-		<script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/lodash.js/3.9.3/lodash.min.js"></script>
+
 
 		<?php // wordpress head functions ?>
 		<?php wp_head(); ?>
