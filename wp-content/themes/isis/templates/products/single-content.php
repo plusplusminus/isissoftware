@@ -34,6 +34,7 @@
 
 
 					<?php if ( have_posts() ) : ?>
+						<h4 class="product_info--subtitle">Product Information</h4>
 						<div class="panel-group" id="accordion" role="tablist" aria-multiselectable="true">
 							<?php while ( have_posts() ) : the_post(); ?>
 								<div class="panel panel-default">
