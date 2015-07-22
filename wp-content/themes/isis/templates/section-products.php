@@ -15,11 +15,11 @@ query_posts( $query_args );
 
 ?>
 
-
 <?php if ( have_posts() ) : ?>
 	<?php while ( have_posts() ) : the_post(); ?>
 		<?php $class = get_post_meta($post->ID,'_ppm_section_class',true); ?>
-	  	<section class="section_child css-fullscreen css-overlay">
+		<?php $id =  get_the_ID(); ?>
+	  	<section class="section_child css-fullscreen css-overlay section_child--<?php echo $id; ?>">
 			<div class="background-image-holder">
 				<?php the_post_thumbnail('full',array('class'=>'background-image')); ?>
 			</div>

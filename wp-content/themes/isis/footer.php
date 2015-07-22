@@ -3,10 +3,10 @@
       <div class="footer_primary">
         <div class="container">
           <div class="row">
-            <div class="col-md-4">
+            <div class="col-md-5">
               <?php secondary_nav('footer-nav','navbar_bottom'); ?>
             </div>
-            <div class="col-md-4">
+            <div class="col-md-2">
               <div class="footer_logo">
               <?php if ( ( '' != $tpb_options['footer_logo']['url'] ) ) {
                 $logo_url = $tpb_options['footer_logo']['url'];
@@ -17,10 +17,10 @@
               ?>
               </div>
             </div>
-            <div class="col-md-4">
+            <div class="col-md-5">
               <div class="footer_attribution">
-                <span>&copy; <?php echo date('Y'); ?> <?php bloginfo( 'name' ); ?>.</span>
-                <span>Created by <a href="http://www.plusplusminus.co.za/?utm_source=ISIS&amp;utm_medium=Footer&amp;utm_campaign=Credit" title="PlusPlusMinus Design &amp; Development" target="_blank">PPM</a></span>
+                <span>Copyright &copy; <?php echo date('Y'); ?> <?php bloginfo( 'name' ); ?>.</span>
+                <span>Created by <a href="http://www.plusplusminus.co.za/?utm_source=ISIS&amp;utm_medium=Footer&amp;utm_campaign=Credit" title="PlusPlusMinus Design &amp; Development" target="_blank">PlusPlusMinus</a></span>
               </div>
             </div>
           </div>

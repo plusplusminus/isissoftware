@@ -14,6 +14,14 @@ jQuery(document).ready(function(){
             jQuery(this).addClass('fadeIn');
         });
     }, 200);
+
+    jQuery('#video-grid').mixItUp();
+    jQuery('#video-premium-grid').mixItUp({
+        selectors: {
+            filter: '.filter-btn'
+        }
+    });
+
 })
 
 

@@ -62,10 +62,20 @@ function child_sections($sections){
                         'default'=>array('url'=>'http://s.wordpress.org/style/images/codeispoetry.png'),
                         ),
                 array(
+                        'id'=>'site_compact_logo',
+                        'type' => 'media', 
+                        'url'=> true,
+                        'title' => __('Site Logo - Compact', 'ppm'),
+                        'compiler' => 'true',
+                        //'mode' => false, // Can be set to false to allow any media type, or can also be set to any mime type.
+                        'desc'=> __('Select compact logo from media gallery', 'ppm'),
+                        'default'=>array('url'=>'http://s.wordpress.org/style/images/codeispoetry.png'),
+                        ),
+                array(
                         'id'=>'footer_logo',
                         'type' => 'media', 
                         'url'=> true,
-                        'title' => __('Site Logo', 'ppm'),
+                        'title' => __('Site Footer Logo', 'ppm'),
                         'compiler' => 'true',
                         //'mode' => false, // Can be set to false to allow any media type, or can also be set to any mime type.
                         'desc'=> __('Select footer logo from media gallery', 'ppm'),
@@ -276,6 +286,83 @@ function campaign_register_metabox() {
         'desc'             => 'Enter the product subtitle',
         'id'               => $prefix.'product_subtitle',
         'type'             => 'text'
+    ) );
+
+    $industries_meta = new_cmb2_box( array(
+        'id'            => $prefix . 'industries_metabox',
+        'title'         => __( 'Industries Meta', 'cmb2' ),
+        'object_types'  => array( 'industry'), // Post type
+        'context'       => 'normal',
+        'priority'      => 'high',
+        'show_names'    => true, // Show field names on the left
+        // 'cmb_styles' => false, // false to disable the CMB stylesheet
+        // 'closed'     => true, // true to keep the metabox closed by default
+    ) );
+
+    $industries_meta->add_field( array(
+        'name'             => 'Industry Subtitle',
+        'desc'             => 'Enter the industry subtitle',
+        'id'               => $prefix.'industry_subtitle',
+        'type'             => 'text'
+    ) );
+
+    $support_meta = new_cmb2_box( array(
+        'id'            => $prefix . 'support_metabox',
+        'title'         => __( 'Support Meta', 'cmb2' ),
+        'object_types'  => array( 'page'), // Post type
+        'context'       => 'normal',
+        'priority'      => 'high',
+        'show_names'    => true, // Show field names on the left
+        // 'cmb_styles' => false, // false to disable the CMB stylesheet
+        // 'closed'     => true, // true to keep the metabox closed by default
+    ) );
+
+
+    $support_meta->add_field( array(
+        'name'             => 'Support Resources Title',
+        'desc'             => 'Enter section title',
+        'id'               => $prefix.'resource_title',
+        'type'             => 'text',
+    ) );
+
+    $support_meta->add_field( array(
+        'name'             => 'Support Resources Intro',
+        'desc'             => 'Enter section intro',
+        'id'               => $prefix.'resource_intro',
+        'type'             => 'textarea',
+    ) );
+
+    $support_meta->add_field( array(
+        'name'             => 'Support Premium Resources Title',
+        'desc'             => 'Enter section title',
+        'id'               => $prefix.'resource_premium_title',
+        'type'             => 'text',
+    ) );
+
+    $support_meta->add_field( array(
+        'name'             => 'Support Premium Resources Intro',
+        'desc'             => 'Enter section intro',
+        'id'               => $prefix.'resource_premium_intro',
+        'type'             => 'textarea',
+    ) );
+
+    $video_meta = new_cmb2_box( array(
+        'id'            => $prefix . 'video_metabox',
+        'title'         => __( 'Video Meta', 'cmb2' ),
+        'object_types'  => array( 'videos'), // Post type
+        'context'       => 'normal',
+        'priority'      => 'high',
+        'show_names'    => true, // Show field names on the left
+        // 'cmb_styles' => false, // false to disable the CMB stylesheet
+        // 'closed'     => true, // true to keep the metabox closed by default
+    ) );
+
+
+    $video_meta->add_field( array(
+        'name'             => 'Video Duration',
+        'desc'             => 'Enter enter video duration (2:01s)',
+        'id'               => $prefix.'video_duration',
+        'type'             => 'text',
     ) );
 
 

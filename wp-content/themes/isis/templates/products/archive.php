@@ -17,10 +17,12 @@ query_posts( $query_args );
 <section class="section_products-archive">  
 	<div class="container">
 		<div class="row">
-			<div class="col-md-7">
+			<div class="col-md-12">
 				<div class="section_products--heading">
-					<h2 class="section_products--title">Product Archive</h2>
+					<h2 class="section_products--title">All Products</h2>
 				</div>
+			</div>
+			<div class="col-md-7">
 				<?php if ( have_posts() ) : ?>
 					<ul class="products_list">
 						<?php while ( have_posts() ) : the_post(); ?>

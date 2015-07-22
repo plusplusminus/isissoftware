@@ -15,7 +15,7 @@ global $post;
 			<div class="section_products--info">
 				<div class="container">
 					<div class="row">
-						<div class="col-md-5">
+						<div class="col-md-8">
 							<div class="products_content">
 								<h2 class="products_content--title"><?php the_title(); ?></h2>
 								<?php the_content(); ?>

@@ -15,16 +15,18 @@ query_posts( $query_args );
 <section class="section_industries-archive">  
 	<div class="container">
 		<div class="row">
-			<div class="col-md-7">
+			<div class="col-md-12">
 				<div class="section_industries--heading">
-					<h2 class="section_industries--title">Industry Archive</h2>
+					<h2 class="section_industries--title">All Industries</h2>
 				</div>
+			</div>
+			<div class="col-md-7">
 				<?php if ( have_posts() ) : ?>
 					<ul class="industries_list">
 						<?php while ( have_posts() ) : the_post(); ?>
 						  	<li class="industries_list--item list_industry">
 						    	<figure class="industry_image">
-						    		<?php the_post_thumbnail('grid',array('class'=>'img-responsive')); ?>
+						    		<?php // the_post_thumbnail('grid',array('class'=>'img-responsive')); ?>
 								</figure>
 								<div class="industry_info">
 									<?php $subtitle = get_post_meta($post->ID,'_ppm_industry_subtitle',true); ?>
