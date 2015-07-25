@@ -706,10 +706,85 @@ body .gform_wrapper{
 	}
 }
 
+// Support
+
+.panel-group .panel+.panel{
+	margin-top: -1px;
+}
+.panel{
+	box-shadow: none;
+}
+.panel-default{
+	border-left: none;
+	border-right: none;	
+	box-shadow: none;
+	border-color: @gray-lighter;
+	>.panel-heading{
+		background: none;
+		padding: 15px 15px;
+		.panel-title{
+			&:after{
+				font-family: FontAwesome;
+				content: "\f196";
+				display: inline-block;
+				float: right;
+			}
+		}
+	}
+	>.panel-heading.active{
+		.panel-title{
+			&:after{
+				content: "\f147";
+			}
+		}
+	}
+}
+
+#filters,.nav-tabs{
+	margin-bottom: 40px;
+	.active {
+		position: relative;
+		background: #fff;
+		border-bottom: 1px solid #ddd;
+		color: @brand-primary;
+	}
+	li>a{
+		cursor: pointer;
+	}
+	li>a:hover{
+		background: #fff;
+		border-color: #fff; 
+		border-bottom:1px solid #ddd;
+	}
+	.active:after, .active:before{
+		top: 100%;
+		left: 50%;
+		border: solid transparent;
+		content: " ";
+		height: 0;
+		width: 0;
+		position: absolute;
+		pointer-events: none;
+	}
+
+	.active:after{
+		border-color: rgba(255, 255, 255, 0);
+		border-top-color: #fff;
+		border-width: 4px;
+		margin-left: -4px;
+	}
+	.active:before{
+		border-color: rgba(238, 238, 238, 0);
+		border-top-color: #ddd;
+		border-width: 5px;
+		margin-left: -5px;
+	}
+}
+
 .videos_list {
 	.list-unstyled();
 
-	border-top: 1px solid @gray-lighter;
+	// border-top: 1px solid @gray-lighter;
 
 	.list_video {
 		width: 50%;
@@ -729,13 +804,52 @@ body .gform_wrapper{
 		&:nth-child(3n) {
 
 		}
-
 		&:last-child {
 			border-right: 1px solid @gray-lighter;
+		}
+		.video_content{
+
+		}
+		.video_content--title{
+			color: @brand-info;
+		}
+
+		.video_content--meta{
+			.list-inline();
+			.small();
+			color: #828282;
+			margin-bottom: 10px;
+		}
+		.video_content--text{
+			padding: 5px 20px 40px 20px;
 		}
 	}
 }
 
+#loginform{
+	border: 1px solid #ddd;
+	padding: 35px 20px;
+	margin-top: 40px;
+	margin-bottom: 40px;
+	label{
+		display: block;
+		font-weight: normal;
+		.small();
+	}
+	input{
+		background-color: #f9f9f9;
+		border: 1px solid #eee;
+		padding: 5px 10px;
+	}
+	.button-primary{
+		.btn();
+		.btn-info();
+		.btn-sm();
+		padding-left: 40px;
+		padding-right: 40px;
+		margin-top: 10px;
+	}
+}
 .mix{
     display: none;
 }

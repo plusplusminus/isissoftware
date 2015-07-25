@@ -21,8 +21,18 @@ jQuery(document).ready(function(){
             filter: '.filter-btn'
         }
     });
+    
+    jQuery('#accordion')
+      .on('show.bs.collapse', function(e) {
+        jQuery(e.target).prev('.panel-heading').addClass('active');
+      })
+      .on('hide.bs.collapse', function(e) {
+        jQuery(e.target).prev('.panel-heading').removeClass('active');
+    });
 
 })
+
+
 
 
 // Can also be used with $(document).ready()

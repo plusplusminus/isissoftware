@@ -359,6 +359,13 @@ function campaign_register_metabox() {
 
 
     $video_meta->add_field( array(
+        'name'             => 'Video Description',
+        'desc'             => 'Enter text to introduce video',
+        'id'               => $prefix.'video_description',
+        'type'             => 'textarea',
+    ) );
+
+    $video_meta->add_field( array(
         'name'             => 'Video Duration',
         'desc'             => 'Enter enter video duration (2:01s)',
         'id'               => $prefix.'video_duration',

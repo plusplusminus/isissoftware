@@ -38,11 +38,11 @@
 							<?php while ( have_posts() ) : the_post(); ?>
 								<div class="panel panel-default">
 									<div class="panel-heading" role="tab" id="heading<?php echo $post->ID;?>">
-										<h4 class="panel-title">
-											<a role="button" data-toggle="collapse" data-parent="#accordion" href="#collapse<?php echo $post->ID;?>" aria-expanded="true" aria-controls="collapse<?php echo $post->ID;?>">
+										<a role="button" data-toggle="collapse" data-parent="#accordion" href="#collapse<?php echo $post->ID;?>" aria-expanded="true" aria-controls="collapse<?php echo $post->ID;?>">
+											<h4 class="panel-title">
 												<?php the_title(); ?>
-											</a>
-										</h4>
+											</h4>
+										</a>
 									</div>
 
 									<div id="collapse<?php echo $post->ID;?>" class="panel-collapse collapse" role="tabpanel" aria-labelledby="headingOne">
