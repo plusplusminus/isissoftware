@@ -6,7 +6,7 @@
 	<?php $content = get_post_meta($post->ID,'_ppm_resource_intro',true); ?>
 
 	<header class="videos_heading">
-		<h2 class="videos_heading--title"><?php echo $title; ?></h2>
+		<h3 class="videos_heading--title page-header"><?php echo $title; ?></h3>
 		<div class="videos_heading--intro"><?php echo wpautop($content); ?></div>
 	</header>
 

@@ -1,4 +1,4 @@
-<div id="sidebar" class="col-md-offset-1 col-md-6 center-xs">
+<div id="sidebar" class="col-md-6 center-xs">
 
   <?php if ( is_active_sidebar( 'sidebar1' ) ) : ?>
 

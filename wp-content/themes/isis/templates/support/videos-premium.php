@@ -1,13 +1,9 @@
-<h3 class="page-header">Presmium Support Resources</h3>
-<p>Support resources only available to registered customers.</p>
-
-
 	<section class="general_videos">
 		<?php $title = get_post_meta($post->ID,'_ppm_resource_premium_title',true); ?>
 		<?php $content = get_post_meta($post->ID,'_ppm_resource_premium_intro',true); ?>
 
 		<header class="videos_heading">
-			<h2 class="videos_heading--title"><?php echo $title; ?></h2>
+			<h3 class="videos_heading--title page-header"><?php echo $title; ?></h3>
 			<div class="videos_heading--intro"><?php echo wpautop($content); ?></div>
 		</header>
 
