@@ -37,7 +37,7 @@
 					<div class="downlaods-single_children">
 						<?php while ( have_posts() ) : the_post(); ?>
 							<div class="downloads-child_content">
-								<h2 class="downloads-child_content--title"><?php the_title(); ?></h2>
+								<h2 class="page-header"><?php the_title(); ?></h2>
 								<?php the_content(); ?>
 							</div>
 							
