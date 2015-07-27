@@ -11,11 +11,11 @@
 	</header>
 
 	<nav class="videos_category">
-		<?php $terms = get_terms('type','orderby=count&hide_empty=1&child_of=14');?>
+		<?php $terms = get_terms('type','orderby=count&hide_empty=1&child_of=15');?>
 		<ul id="filters" class="nav nav-tabs small">
 		  <li><a class="filter" data-filter="all">All</a></li>
 			<?php foreach ( $terms as $term ) {
-				echo '<li><a class="filter" data-filter=".' . $term->slug . '">' . $term->name . $term->count.'</a></li>';
+				echo '<li><a class="filter" data-filter=".' . $term->slug . '">' . $term->name . '</a></li>';
 			} ?>
 		</ul>
 
