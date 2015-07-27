@@ -247,8 +247,8 @@ function campaign_register_metabox() {
     }
 
     $post_meta->add_field( array(
-        'name'             => 'Test Select',
-        'desc'             => 'Select an option',
+        'name'             => 'Menu Select',
+        'desc'             => 'Select a menu to show',
         'id'               => $prefix.'menu_select',
         'type'             => 'select',
         'show_option_none' => true,
@@ -371,6 +371,32 @@ function campaign_register_metabox() {
         'name'             => 'Video Duration',
         'desc'             => 'Enter enter video duration (2:01s)',
         'id'               => $prefix.'video_duration',
+        'type'             => 'text',
+    ) );
+
+    $header_meta = new_cmb2_box( array(
+        'id'            => $prefix . 'header_metabox',
+        'title'         => __( 'Header Meta', 'cmb2' ),
+        'object_types'  => array( 'page'), // Post type
+        'context'       => 'side',
+        'priority'      => 'low',
+        'show_names'    => true, // Show field names on the left
+        // 'cmb_styles' => false, // false to disable the CMB stylesheet
+        // 'closed'     => true, // true to keep the metabox closed by default
+    ) );
+
+
+    $header_meta->add_field( array(
+        'name'             => 'Button Text',
+        'desc'             => 'Enter section class',
+        'id'               => $prefix.'header_text',
+        'type'             => 'text',
+    ) );
+
+    $header_meta->add_field( array(
+        'name'             => 'Button Link',
+        'desc'             => 'Enter button link',
+        'id'               => $prefix.'header_link',
         'type'             => 'text',
     ) );
 
