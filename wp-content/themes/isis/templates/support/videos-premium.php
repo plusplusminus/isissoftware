@@ -10,7 +10,7 @@
 		<?php if (is_user_logged_in()) : ?>
 
 			<nav class="videos_category">
-				<?php $terms = get_terms('type','orderby=count&hide_empty=1');?>
+				<?php $terms = get_terms('type','orderby=count&hide_empty=1&child_of=14');?>
 				<ul id="filters" class="nav nav-tabs small">
 				  <li><a class="filter-btn" data-filter="all">All</a></li>
 					<?php foreach ( $terms as $term ) {
@@ -40,7 +40,7 @@
 						<ul id="video-premium-grid" class="videos_list">
 							<?php while ( $query->have_posts() ) : $query->the_post(); $count++;?>
 								<?php $product_terms = wp_get_object_terms($post->ID, 'type'); ?>
-							  	<li class="video_list--item list_video mix <?php foreach ($product_terms as $product_term) echo $product_term->slug.' '; ?>">
+							  	<li class="video_list--item list_video mix <?php foreach ($product_terms as $product_term) echo 'prem-'.$product_term->slug.' '; ?>">
 									<div class="video_content">
 										<?php the_content(); ?>
 										<div class="video_content--text">

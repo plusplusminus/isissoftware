@@ -11,7 +11,7 @@
 	</header>
 
 	<nav class="videos_category">
-		<?php $terms = get_terms('type','orderby=count&hide_empty=1');?>
+		<?php $terms = get_terms('type','orderby=count&hide_empty=1&child_of=14');?>
 		<ul id="filters" class="nav nav-tabs small">
 		  <li><a class="filter" data-filter="all">All</a></li>
 			<?php foreach ( $terms as $term ) {
