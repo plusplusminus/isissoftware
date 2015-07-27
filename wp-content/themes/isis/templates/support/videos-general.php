@@ -15,7 +15,7 @@
 		<ul id="filters" class="nav nav-tabs small">
 		  <li><a class="filter" data-filter="all">All</a></li>
 			<?php foreach ( $terms as $term ) {
-				echo '<li><a class="filter" data-filter=".' . $term->slug . '">' . $term->name . $term->count'</a></li>';
+				echo '<li><a class="filter" data-filter=".' . $term->slug . '">' . $term->name . $term->count.'</a></li>';
 			} ?>
 		</ul>
 
