@@ -1,6 +1,3 @@
-<h3 class="page-header">Support Resources</h3>
-<p>Curabitur blandit tempus porttitor. Fusce dapibus, tellus ac cursus commodo, tortor mauris condimentum nibh, ut fermentum massa justo sit amet risus. Nullam id dolor id nibh ultricies vehicula ut id elit. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec sed odio dui. Nullam id dolor id nibh ultricies vehicula ut id elit.</p>
-
 <section class="general_videos">
 	<?php $title = get_post_meta($post->ID,'_ppm_resource_title',true); ?>
 	<?php $content = get_post_meta($post->ID,'_ppm_resource_intro',true); ?>
