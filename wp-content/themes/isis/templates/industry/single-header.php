@@ -18,6 +18,12 @@ global $post;
 						<?php if (!empty($subtitle)) : ?>
 							<p class="product_info--subtitle"><?php echo $subtitle;?></p>
 						<?php endif; ?>
+						<?php $header_link = get_post_meta(18,'_ppm_header_link',true); ?>
+						<?php if (!empty($header_link)) : ?>
+							<div class="product_info--link">
+								<a href="<?php echo $header_link; ?>" class="product_info--btn"><?php echo get_post_meta(18,'_ppm_header_text',true);?></a>
+							</div>
+						<?php endif; ?>
 					</div>
 				</div>
 			</div>
