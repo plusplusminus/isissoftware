@@ -5,7 +5,7 @@
 	<div class="section_header--info">
 		<div class="container">
 			<div class="row">
-				<div class="col-md-5 col-md-offset-1">
+				<div class="col-md-7 col-md-offset-1">
 
 					<?php if ( have_posts() ) : ?>
 						<?php while ( have_posts() ) : the_post(); ?>
