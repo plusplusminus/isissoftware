@@ -26,7 +26,7 @@ query_posts( $query_args );
 						<?php while ( have_posts() ) : the_post(); ?>
 						  	<li class="industries_list--item list_industry">
 						    	<figure class="industry_image">
-						    		<?php // the_post_thumbnail('grid',array('class'=>'img-responsive')); ?>
+						    		<?php the_post_thumbnail('grid',array('class'=>'img-responsive')); ?>
 								</figure>
 								<div class="industry_info">
 									<?php $subtitle = get_post_meta($post->ID,'_ppm_industry_subtitle',true); ?>
