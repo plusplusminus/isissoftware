@@ -34,7 +34,7 @@ query_posts( $query_args );
 									<?php if (!empty($subtitle)) : ?>
 										<h4 class="industry_info--subtitle"><?php echo $subtitle;?></h4>
 									<?php endif; ?>
-									<a href="<?php the_permalink();?>" class="industry_info--link js-load-industry">More Information<span class="fa fa-angle-right"></span></a>
+									<!-- <a href="<?php the_permalink();?>" class="industry_info--link js-load-industry">More Information<span class="fa fa-angle-right"></span></a> -->
 								</div>
 							</li>
 						<?php endwhile; ?>
