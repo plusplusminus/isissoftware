@@ -17,7 +17,7 @@ $query = new WP_Query( $query_args );
 <?php if ( $query->have_posts() ) : ?>
 	<?php while ( $query->have_posts() ) : $query->the_post(); ?>
 	<?php $link = get_post_meta($post->ID,'_ppm_section_link',true); ?>
-	  	<section class="section_training css-fullscreen css-overlay">
+	  	<section class="section_training css-fullscreen">
 			<div class="background-image-holder">
 				<?php the_post_thumbnail('full',array('class'=>'background-image')); ?>
 			</div>

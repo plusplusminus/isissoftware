@@ -19,7 +19,7 @@ query_posts( $query_args );
 	<?php while ( have_posts() ) : the_post(); ?>
 		<?php $class = get_post_meta($post->ID,'_ppm_section_class',true); ?>
 		<?php $id =  get_the_ID(); ?>
-	  	<section class="section_child css-fullscreen css-overlay section_child--<?php echo $id; ?>">
+	  	<section class="section_child css-fullscreen section_child--<?php echo $id; ?>">
 			<div class="background-image-holder">
 				<?php the_post_thumbnail('full',array('class'=>'background-image')); ?>
 			</div>
