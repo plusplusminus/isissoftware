@@ -142,6 +142,10 @@ body{
 	}
 	.logo {
 		float: left;
+		&:focus{
+			outline: none;
+			box-shadow:none !important;
+		}
 		img {
 			margin-top: 11px;
 			height: 51px;
@@ -548,13 +552,14 @@ body{
       		box-shadow: 0px 0px 5px #ccc;
     	}
 		&:nth-child(2n+1) {
+			clear: both;
 			@media (min-width: @screen-sm-min) {
 				border-right: none;
 			}
 		}
 
 		&:nth-child(3n) {
-			.clearfix();
+			
 		}
 
 		&:last-child {
@@ -766,7 +771,7 @@ body .gform_wrapper{
 	.gform_footer{
 		input[type=submit]{
 			.btn();
-			.btn-primary();
+			.btn-info();
 		}
 	}
 }
