@@ -1,5 +1,12 @@
-/* Section Header */
+a,
+img{
+	&:focus{
+		outline: none;
+		box-shadow:none !important;
+	}
+}
 
+/* Section Header */
 .vertical {
 	position: relative;
 	top: 50%;
@@ -142,10 +149,6 @@ body{
 	}
 	.logo {
 		float: left;
-		&:focus{
-			outline: none;
-			box-shadow:none !important;
-		}
 		img {
 			margin-top: 11px;
 			height: 51px;
