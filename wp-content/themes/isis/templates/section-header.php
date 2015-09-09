@@ -11,7 +11,7 @@
 						<?php while ( have_posts() ) : the_post(); ?>
 							<div class="header_content">
 								<?php the_content(); ?>
-								<a href="#" class="btn btn-info btn-lg"><small>Download Free Trial Today</small> <span class="fa fa-angle-right"></span></a>
+								<a href="http://isistool.co.uk/downloads/" class="btn btn-info btn-lg"><small>Download Free Trial Today</small> <span class="fa fa-angle-right"></span></a>
 							</div>
 						<?php endwhile; ?>
 					<?php endif; ?>

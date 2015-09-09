@@ -154,12 +154,21 @@ body{
 			height: 51px;
 			width: auto;
 			margin-right: 20px;
+			margin-left: 15px;
 			.home &{
 				margin-top: 0px;
 				width: 65px;
 				height: 81px;
 			}
 		}
+	}
+}
+
+
+.navbar-collapse.in,
+.navbar-collapse.collapsing{
+	@media (max-width: @screen-md-min) {
+		background: #111;
 	}
 }
 
