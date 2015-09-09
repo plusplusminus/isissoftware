@@ -155,6 +155,10 @@ body{
 			width: auto;
 			margin-right: 20px;
 			margin-left: 15px;
+			@media (min-width: @screen-md-min){
+				margin-left: 0px;
+			}
+			
 			.home &{
 				margin-top: 0px;
 				width: 65px;
@@ -167,8 +171,9 @@ body{
 
 .navbar-collapse.in,
 .navbar-collapse.collapsing{
-	@media (max-width: @screen-md-min) {
-		background: #111;
+	background: rgba(17,17, 17, 0.95);
+	@media (min-width: @screen-md-min) {
+		background: transparent;
 	}
 }
 
@@ -278,11 +283,11 @@ body{
   }
   &::before{
     content: "\f10d";
-    left: -10%;
+    left: 0%;
   }
   &::after{
     content: "\f10e";
-    right: -10%;
+    right: 0%;
   }
 	color: #fff;
 	border-left: none;
